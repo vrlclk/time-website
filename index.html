@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Information about the website -->
+    <title>Time will be shown here</title>
+    <meta name="description" content="A website that shows your time on the tab and page">
+
+    <!--Styling -->
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+
+    <!-- GDPR compliant font hoster -->
+    <link rel="preconnect" href="https://api.fonts.coollabs.io">
+    <link href="https://api.fonts.coollabs.io/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- Main website's CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Here goes the JavaScript -->
+    <script defer src="script.js"></script>
+</head>
+
+<body class="dark">
+    <!-- Header with basic settings -->
+    <header>
+        <div class="header-container">
+            <!--Left side-->
+            <h1 class="header">Time website</h1>
+            <nav class="options">
+                <!--Right side-->
+                <div class="options__font">
+                    <select name="font-selector" id="font-selector">
+                        <option value="0" selected="selected">Roboto Mono</option>
+                        <option value="1">Arial</option>
+                        <option value="2">Times New Roman</option>
+                        <option value="3">Comic Sans MS</option>
+                    </select>
+                </div>
+                <div class="options__light-dark">
+                    <select name="light-dark-mode-selector" id="light-dark-mode-selector">
+                        <option value="dark" selected="selected">Dark</option>
+                        <option value="light">Light</option>
+                    </select>
+                </div>
+                <div class="options__12-24">
+                    <select name="12-24-h-selector" id="12-24-h-selector">
+                        <option value="12h">12-hour</option>
+                        <option value="24h" selected="selected">24-hour</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Here is where the actual time displays and updates -->
+    <main>
+        <div class="time-container">
+            <p class="date">Day, DD.MM.YYYY</p>
+            <p class="time">XX:XX:XX</p>
+            <p class="language">Format language: <strong class="myLanguage"></strong></p>
+            <div class="description">
+                <p>This website displays the time in your browser window and tab and allows you to toggle fullscreen mode by clicking the time.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shows who designed it and provides links about the creator -->
+    <footer class="footer-container">
+        <div class="footer-container__credit">
+            <p>2023, made by vrlc - Version 1.0</p>
+        </div>
+
+        <div class="footer-container__links">
+            <ul>
+                <li><a href="https://www.github.com/vrlclk">Github</a></li>
+                <!--<li><a href="https://vrlclk.github.io">Portfolio</a></li>--> <!-- Coming soon -->
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
