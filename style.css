@@ -5,6 +5,7 @@
     --clr-main-dark: rgb(15, 20, 80);
     --clr-main-light: rgb(255, 255, 255);
     --clr-secondary-dark: #444;
+    --clr-link-hover: rgb(50, 205, 50);
 
     /* Font families */
     --ff-mono: 'Roboto Mono', monospace;
@@ -44,7 +45,7 @@ a, a:visited{
 
 a:hover, a:focus{
     text-decoration: underline;
-    color: aqua;
+    color: var(--clr-link-hover);
 }
 
 header, footer{
@@ -108,8 +109,19 @@ header, footer{
     justify-content: space-between;
 }
 
-.footer-container__credit{
-    color: darkgray;
+.footer-container__credit,
+.footer-container__credit a{
+    color: lightgray;
+}
+
+.footer-container__credit a{
+    text-decoration: underline;
+}
+
+.footer-container__credit a:hover,
+.footer-container__credit a:focus{
+    color: var(--clr-link-hover);
+    text-decoration: none;
 }
 
 .footer-container__links li{
