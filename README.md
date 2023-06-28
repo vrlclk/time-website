@@ -1,5 +1,7 @@
 # Time website
 
+## [Click here to visit the website](https://time-on-tab.vercel.app/)
+
 This website provides a unique way to display the time directly in your computer's browser window and browser tab in real time.
 
 <img src="./screenshots/screen-homepage.png" style="width: 50%">
