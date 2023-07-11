@@ -75,8 +75,7 @@ function displayDate(){
  * Outputs the time in the HTML element: <p class="time">
 */
 function displayTime(param){
-    let generateTime = new Date().toLocaleTimeString(navigator.language, TimeOptions);
-    param.textContent = generateTime;
+    param.textContent = new Date().toLocaleTimeString(navigator.language, TimeOptions);
 }
 
 function outputDateAndTime(){
@@ -128,7 +127,7 @@ selectHours.addEventListener('change', () => {
   if (selectHours.value === "12h") {
     hourFormat = "h12";
   } else {
-    hourFormat = "h24";
+    hourFormat = "h23";
   }
 
   TimeOptions = {
@@ -173,3 +172,6 @@ window.addEventListener("load", () => {
     };
   }
 });
+
+/* My little brother's first line of code. He's 9 years old. */
+console.log("hotspot");

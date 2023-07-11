@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Information about the website -->
-    <title>Time will be shown here</title>
+    <title>Time on tab</title>
     <meta name="description" content="A website that shows your time on the tab and page">
 
     <!--Styling -->
     <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
 
-    <!-- GDPR compliant font hoster -->
+    <!-- GDPR-compliant font hoster -->
     <link rel="preconnect" href="https://api.fonts.coollabs.io">
     <link href="https://api.fonts.coollabs.io/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
@@ -29,15 +29,15 @@
     <!-- Header with basic settings -->
     <header>
         <div class="header-container">
-            <!--Left side-->
-            <h1 class="header">Time website</h1>
+            <!-- Left side - Headline -->
+            <h1 class="header">Time on tab</h1>
             <nav class="options">
-                <!--Right side-->
+                <!-- Right side - Options -->
                 <div class="options__font">
                     <select name="font-selector" id="font-selector">
                         <option value="0" selected="selected">Roboto Mono</option>
-                        <option value="1">Arial</option>
-                        <option value="2">Times New Roman</option>
+                        <option value="1">Sans-serif</option>
+                        <option value="2">Serif</option>
                         <option value="3">Comic Sans MS</option>
                     </select>
                 </div>
@@ -57,11 +57,11 @@
         </div>
     </header>
 
-    <!-- Here is where the actual time displays and updates -->
+    <!-- Here is where the actual time displays and updates in real time -->
     <main>
         <div class="time-container">
             <p class="date">Day, DD.MM.YYYY</p>
-            <p class="time">XX:XX:XX</p>
+            <p class="time" tabindex="0">XX:XX:XX</p>
             <p class="language">Format language: <strong class="myLanguage"></strong></p>
             <div class="description">
                 <p>This website displays the time in your browser window and tab and allows you to toggle fullscreen mode by clicking the time.</p>
@@ -69,16 +69,16 @@
         </div>
     </main>
 
-    <!-- Shows who designed it and provides links about the creator -->
+    <!-- Footer area -->
     <footer class="footer-container">
         <div class="footer-container__credit">
-            <p>2023, <a href="https://github.com/vrlclk/time-website">made by vrlc - Version 1.0</a></p>
+            <p>2023, <a href="https://github.com/vrlclk/time-website">made by vrlc - Version 1.0.1</a></p>
         </div>
 
         <div class="footer-container__links">
             <ul>
-                <li><a href="https://www.github.com/vrlclk">Github</a></li>
-                <!--<li><a href="https://vrlclk.github.io">Portfolio</a></li>--> <!-- Coming soon -->
+                <li><a href="https://www.github.com/vrlclk" target="_blank">Github</a></li>
+                <!--<li><a href="https://vrlclk.github.io" target="_blank">Portfolio</a></li>--> <!-- Coming soon -->
             </ul>
         </div>
     </footer>
