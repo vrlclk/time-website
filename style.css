@@ -55,6 +55,10 @@ header, footer{
     color: white;
 }
 
+.note{
+    text-transform: uppercase;
+}
+
 /* Event options */
 .hide{
     display: none !important;
@@ -108,6 +112,11 @@ header, footer{
 .description{
     padding: 1rem;
     text-align: center;
+}
+
+/* Only available on Chrome 115 and higher */
+.description{
+    text-wrap: balance;
 }
 
 /* Footer */

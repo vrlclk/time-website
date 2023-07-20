@@ -26,6 +26,7 @@ myLanguage.textContent = navigator.language;
 /**
  * Toggles fullscreen mode for the time
  * Hides all the other elements from the website
+ * The first code is for clicking the mouse
 */
 time.addEventListener('click', () => {
     // hides everything besides the time -> hide everything
@@ -35,6 +36,21 @@ time.addEventListener('click', () => {
     description.classList.toggle("hide");
     myLanguage.classList.toggle("hide");
     language.classList.toggle("hide");
+});
+
+/**
+ * The second is for pressing the Enter key
+ */
+time.addEventListener('keypress', (e) => {
+    if(e.key === "Enter") {
+        // hides everything besides the time -> hide everything
+        header.classList.toggle("hide");
+        footer.classList.toggle("hide");
+        date.classList.toggle("hide");
+        description.classList.toggle("hide");
+        myLanguage.classList.toggle("hide");
+        language.classList.toggle("hide");
+    }
 });
 
 /**
